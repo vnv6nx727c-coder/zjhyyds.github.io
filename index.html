@@ -1,0 +1,488 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="180x180" href="../img/180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/180x180.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>作业(家浩出品)</title>
+    <style>
+        body {
+            background: #f4f4f4;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .x {
+            margin: 0 auto;
+            width: 360px;
+        }
+
+        .x-1 {
+            color: #ffffff;
+            background-color: black;
+            text-align: center;
+            height: 45;
+            width: 360px;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-bottom: 3;
+        }
+
+        .x-2 {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        .x-3 {
+            height: 24;
+            width: 65;
+            background-color: #000000;
+            border-radius: 50px;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .lastTime {
+            width: 220;
+            background-color: #000000;
+            border-radius: 50px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .a {
+            color: #ffffff;
+            margin-left: 25;
+            margin-top: 5;
+        }
+
+        .b {
+            background-color: #ffffff;
+            width: 330px;
+            height: 120px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 5;
+            overflow: hidden;
+        }
+
+        .c {
+            margin-left: -10;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+
+        .chinese {
+            overflow: hidden;
+            background-color: #fcd217;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .math {
+            overflow: hidden;
+            background-color: #15559a;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        .English {
+            overflow: hidden;
+            background-color: #f04b22;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        .历史 {
+            overflow: hidden;
+            background-color: #f28e16;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        .政治 {
+            overflow: hidden;
+            background-color: #43b244;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        .物理 {
+            overflow: hidden;
+            background-color: #29b7cb;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        .化学 {
+            overflow: hidden;
+            background-color: #813c85;
+            width: 360px;
+            height: 160px;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-top: 10;
+        }
+
+        li {
+            height: 24px;
+            padding-left: 5px;
+        }
+
+        /* 编辑模式下的样式提示：黄色背景+虚线 */
+        li[contenteditable="true"] {
+            border-bottom: 1px dashed #ccc;
+            background-color: #fffef0;
+        }
+
+        .admin-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .copy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="x">
+        <div class="x-1">
+            <h1>作业</h1>
+        </div>
+        <div class="x-2">
+            <a href="../index.html"><button class="x-3">主页</button></a>
+            <span id="lastTime" class="lastTime">
+                最后更新时间：加载中...
+            </span>
+            <button class="x-3" onclick="location.reload()">刷新</button>
+        </div>
+        <hr color="#000" width="360">
+    </div>
+
+    <div class="chinese">
+        <div class="a"><b>语文作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="math">
+        <div class="a"><b>数学作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="English" style="height:190px">
+        <div class="a"><b>英语作业:</b></div>
+        <div class="b" style="height:150px">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div><a href="https://47.112.213.190/viewer/viewer.html?img=book/1.png">
+                        照片1
+                    </a>
+                </div>
+            </ol>
+        </div>
+    </div>
+    <div class="历史">
+        <div class="a"><b>历史作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="政治">
+        <div class="a"><b>政治作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="物理">
+        <div class="a"><b>物理作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="化学">
+        <div class="a"><b>化学作业:</b></div>
+        <div class="b">
+            <ol class="c">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px; margin-bottom: 40px;">
+        <span id="copyBtnWrapper">
+            <button class="copy-btn" onclick="copyAll()">一键复制作业</button>
+        </span>
+        <button id="adminBtn" class="admin-btn" onclick="handleAdminClick()">修改作业（管理员）</button>
+    </div>
+
+    <script>
+        let cachedPassword = "";
+
+        // 页面加载逻辑
+        window.addEventListener('DOMContentLoaded', function () {
+            fetch('data.json?t=' + new Date().getTime())
+                .then(response => {
+                    if (!response.ok) throw new Error("未找到数据");
+                    return response.json();
+                })
+                .then(data => {
+                    let contentList = [];
+                    if (Array.isArray(data)) {
+                        contentList = data;
+                        document.getElementById('lastTime').innerText = "最后更新时间：旧数据";
+                    } else {
+                        contentList = data.content;
+                        if (data.time) {
+                            document.getElementById('lastTime').innerText = "最后更新时间：" + data.time;
+                        }
+                    }
+                    const lis = document.querySelectorAll('li');
+                    lis.forEach((li, index) => {
+                        if (contentList[index]) li.innerText = contentList[index];
+                    });
+                })
+                .catch(error => {
+                    document.getElementById('lastTime').innerText = "最后更新时间：无数据";
+                });
+        });
+
+        // 管理员点击逻辑
+        function handleAdminClick() {
+            const btn = document.getElementById('adminBtn');
+            const lis = document.querySelectorAll('li');
+
+            if (btn.innerText === '修改作业（管理员）') {
+                const password = prompt("请输入管理员密码开启编辑:");
+                if (password === "123456") { // 记得和 save.php 保持一致
+                    cachedPassword = password;
+                    btn.innerText = "保存作业";
+                    btn.style.backgroundColor = "red";
+                    lis.forEach(li => li.contentEditable = "true");
+                    document.getElementById('copyBtnWrapper').style.display = 'none';
+                    alert("密码正确！\n已进入编辑模式！\n请点击上面的空白行或文字直接修改。\n修改完成后再次点击底部的“保存修改”按钮。");
+                } else if (password !== null) {
+                    alert("密码错误！");
+                }
+            } else {
+                saveToServer();
+            }
+        }
+
+        function getCurrentTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const day = now.getDate().toString().padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+
+        function saveToServer() {
+            const lis = document.querySelectorAll('li');
+            let dataArray = [];
+            lis.forEach(li => dataArray.push(li.innerText));
+            const timeStr = getCurrentTime();
+
+            const payload = {
+                password: cachedPassword,
+                time: timeStr,
+                content: dataArray
+            };
+
+            fetch('save.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+                .then(response => response.json())
+                .then(result => {
+                    if (result.status === 'success') {
+                        alert("保存成功！作业已更新");
+                        document.getElementById('lastTime').innerText = "最后更新时间：" + timeStr;
+                        const btn = document.getElementById('adminBtn');
+                        const lis = document.querySelectorAll('li');
+                        lis.forEach(li => li.contentEditable = "false");
+                        btn.innerText = "修改作业（管理员）";
+                        btn.style.backgroundColor = "#333";
+                        cachedPassword = "";
+                        document.getElementById('copyBtnWrapper').style.display = 'inline-block';
+
+                    } else {
+                        alert("保存失败: " + result.message);
+                    }
+                })
+                .catch(error => alert("请求出错"));
+        }
+
+        // === 兼容模式 ===
+        function fallbackCopyTextToClipboard(text) {
+            let textArea = document.createElement("textarea");
+            textArea.value = text;
+
+            // 设置为不可见并插入到页面
+            textArea.style.position = "fixed";
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.opacity = "0";
+            document.body.appendChild(textArea);
+
+            // 选中并复制
+            textArea.focus();
+            textArea.select();
+
+            try {
+                let successful = document.execCommand('copy');
+                if (successful) {
+                    alert("复制成功！\n已复制到剪贴板，快去粘贴吧~");
+                } else {
+                    alert("复制失败，请手动长按选中文字复制。");
+                }
+            } catch (err) {
+                alert("复制失败，请手动长按选中文字复制。");
+            }
+
+            // 清除元素
+            document.body.removeChild(textArea);
+        }
+        // === 结束：兼容模式复制核心函数 ===
+
+
+        // 一键复制功能（已更新）
+        function copyAll() {
+            const subjects = [
+                { cls: 'chinese', name: '语文作业：' },
+                { cls: 'math', name: '数学作业：' },
+                { cls: 'English', name: '英语作业：' },
+                { cls: '历史', name: '历史作业：' },
+                { cls: '政治', name: '政治作业：' },
+                { cls: '物理', name: '物理作业：' },
+                { cls: '化学', name: '化学作业：' }
+            ];
+
+            const liveTime = getCurrentTime()
+            let textToCopy = "作业" + "【" + liveTime + "】\n\n";
+            let hasContent = false;
+
+            subjects.forEach(sub => {
+                const div = document.querySelector('.' + sub.cls);
+                if (div) {
+                    const items = div.querySelectorAll('li');
+                    let subText = "";
+                    let count = 0;
+
+                    items.forEach(item => {
+                        if (item.innerText.trim()) {
+                            count++;
+                            subText += count + ". " + item.innerText.trim() + "\n";
+                        }
+                    });
+
+                    if (subText) {
+                        textToCopy += "Subject: " + sub.name + "\n" + subText + "\n";
+                        hasContent = true;
+                    }
+                }
+            });
+
+            if (!hasContent) {
+                alert("当前没有任何作业内容可复制哦~");
+                return;
+            }
+            textToCopy = textToCopy.replace(/Subject: /g, "· ");
+
+            // === 核心修改：使用兼容性检查 ===
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                // 现代 API 优先
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    alert("复制成功！\n已复制到剪贴板，快去粘贴吧~");
+                }).catch(err => {
+                    // 如果 API 存在但被拒绝（比如权限不足），则退回到兼容模式
+                    fallbackCopyTextToClipboard(textToCopy);
+                });
+            } else {
+                // 如果 API 压根不存在（旧浏览器或非安全环境），直接使用兼容模式
+                fallbackCopyTextToClipboard(textToCopy);
+            }
+            // === 核心修改结束 ===
+        }
+    </script>
+</body>
